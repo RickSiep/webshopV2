@@ -4,6 +4,7 @@ import logo from '../penLogo.png';
 import styled from 'styled-components';
 import {ButtonContainer} from "./Button";
 
+
 class Navbar extends Component {
     render() {
         return (
@@ -13,17 +14,23 @@ class Navbar extends Component {
                 </Link>
                 <ul className="navbar-nav align-items-center">
                     <li className="nav-item ml-5">
-                        <Link to="/" className="nav-link">
-                            Products
+                        <Link to="/products" className="nav-link">
+                            Producten
+                        </Link>
+                    </li>
+                </ul>
+                <ul className="navbar-nav align-items-center">
+                    <li className="nav-item ml-5">
+                        <Link to="/works" className="nav-link">
+                            Hoe het werkt
                         </Link>
                     </li>
                 </ul>
                 <Link to="/cart" className="ml-auto">
                    <ButtonContainer>
                        <span className="mr-2">
-                           <i className="fas fa-check"/>
+                           <i class="fas fa-shopping-cart"/>
                        </span>
-                       my cart
                    </ButtonContainer>
                 </Link>
             </NavWrapper>
