@@ -31,23 +31,36 @@ class Home extends Component {
                         <h2>Hoe werkt het</h2>
                     </div>
                         <div className="row">
-                            <div className="col">
-                                <img src={Icon} alt="Icon"></img>
+                            <div className="col p-5">
+                                <div className="d-flex align-items-center justify-content-center">
+                                 <img src={Icon} alt="Icon"></img>
+                                </div>
                                 <p>Wil jij elke maand of 3 maanden een paar schoenen? kies dan de Sneak- Elite Of Premium service met slechts een paar muisklikken.</p>
                             </div>
-                            <div className="col">
-                                <img src={Icon} alt="Icon"></img>
+                            <div className="col p-5">
+                                <div className="d-flex align-items-center justify-content-center">
+                                    <img src={Icon} alt="Icon"></img>
+                                </div>
                                 <p>Wil jij elke maand of 3 maanden een paar schoenen? kies dan de Sneak- Elite Of Premium service met slechts een paar muisklikken.</p>
                             </div>
-                            <div className="col">
-                                <img src={Icon} alt="Icon"></img>
+                            <div className="col p-5">
+                                <div className="d-flex align-items-center justify-content-center">
+                                    <img src={Icon} alt="Icon"></img>
+                                </div>
                                 <p>Wil jij elke maand of 3 maanden een paar schoenen? kies dan de Sneak- Elite Of Premium service met slechts een paar muisklikken.</p>
                             </div>
-                            <div className="col">
-                                <img src={Icon} alt="Icon"></img>
+                            <div className="col p-5">
+                                <div className="d-flex align-items-center justify-content-center">
+                                    <img src={Icon} alt="Icon"></img>
+                                </div>
                                 <p>Wil jij elke maand of 3 maanden een paar schoenen? kies dan de Sneak- Elite Of Premium service met slechts een paar muisklikken.</p>
                             </div>
                         </div>
+                <div className="d-flex align-items-center justify-content-center">
+                    <ButtonContainer>
+                        <a href="/products">Ga Peng Winnen!</a>
+                    </ButtonContainer>
+                </div>
                     </div>
 
         );

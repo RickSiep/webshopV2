@@ -21,6 +21,7 @@ class FormUserDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
+                    <div className="d-flex justify-content-center align-items-center">
                     <List>
                         <ListItem
                             primaryText="First Name"
@@ -47,18 +48,21 @@ class FormUserDetails extends Component {
                             secondaryText = { bio }
                         />
                     </List>
-                    <RaisedButton
-                        label="Confirm & Continue"
-                        primary={true}
-                        style={styles.button}
-                        onClick={this.continue}
-                    />
-                    <RaisedButton
-                        label="Terug"
-                        primary={false}
-                        style={styles.button}
-                        onClick={this.back}
-                    />
+                    </div>
+                    <div className="d-flex justify-content-center">
+                        <RaisedButton
+                            label="Confirm & Continue"
+                            primary={true}
+                            style={styles.button}
+                            onClick={this.continue}
+                        />
+                        <RaisedButton
+                            label="Terug"
+                            primary={false}
+                            style={styles.button}
+                            onClick={this.back}
+                        />
+                    </div>
                 </React.Fragment>
             </MuiThemeProvider>
         );

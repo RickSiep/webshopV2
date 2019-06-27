@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import context from '../../context';
+import {ButtonContainer} from "../Button";
+import {ProductProvider} from "../../context";
 
 class FormUserDetails extends Component {
+
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
@@ -15,6 +17,7 @@ class FormUserDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
+                    <div className="d-flex align-items-center flex-column">
                     <TextField
                     hintText="Uw naam"
                     floatingLabelText="Voornaam"
@@ -35,13 +38,13 @@ class FormUserDetails extends Component {
                         onChange={handleChange('email')}
                         defaultValue={values.email}
                     />
-                    <RaisedButton
-                    label="Continue"
-                    primary={true}
-                    style={styles.button}
-                    onClick={this.continue}
-                    />
                     <br />
+                    </div>
+                    <div className="d-flex justify-content-center">
+                    <ButtonContainer onClick={this.continue}>
+                        Volgende
+                    </ButtonContainer>
+                    </div>
                 </React.Fragment>
             </MuiThemeProvider>
         );

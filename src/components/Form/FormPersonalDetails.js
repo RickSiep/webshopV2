@@ -4,6 +4,8 @@ import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
+
+
 class FormPersonalDetails extends Component {
     continue = e => {
         e.preventDefault();
@@ -22,6 +24,7 @@ class FormPersonalDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
+                    <div className="d-flex align-items-center flex-column">
                     <TextField
                         hintText="Uw baan"
                         floatingLabelText="baan"
@@ -42,6 +45,8 @@ class FormPersonalDetails extends Component {
                         onChange={handleChange('bio')}
                         defaultValue={values.bio}
                     />
+                    </div>
+                    <div className="d-flex justify-content-center">
                     <RaisedButton
                         label="Volgende"
                         primary={true}
@@ -54,6 +59,7 @@ class FormPersonalDetails extends Component {
                         style={styles.button}
                         onClick={this.back}
                     />
+                    </div>
                 </React.Fragment>
             </MuiThemeProvider>
         );
