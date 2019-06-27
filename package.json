@@ -1,8 +1,10 @@
 {
   "name": "shopyt",
+  "homepage": "http://24585.hosts1.ma-cloud.nl/bewijzenmap/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-ui": "^0.20.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",

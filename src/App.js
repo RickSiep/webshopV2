@@ -11,6 +11,7 @@ import Modal from './components/Modal';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Works from './components/Works';
+import UserForm from './components/Form/UserForm';
 
 
 class App extends Component{
@@ -24,6 +25,7 @@ class App extends Component{
                 <Route path="/details" component={Details}></Route>
                 <Route path="/works" component={Works}></Route>
                 <Route path="/cart" component={Cart}></Route>
+                <Route path="/form" component={UserForm}></Route>
                 <Route component={Default}></Route>
             </Switch>
             <Footer/>

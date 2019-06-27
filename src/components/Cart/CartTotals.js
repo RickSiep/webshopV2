@@ -34,6 +34,14 @@ export default function CartTotals({value}){
                        <strong>€ {cartTotal}</strong>
                    </h5>
                </div>
+               <div className="col-12 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
+                   <Link to="/form">
+                       <button className="btn btn-outline-primary
+                       text-uppercase mb-3 px-5" type="button">
+                           Doorgaan
+                       </button>
+                   </Link>
+               </div>
            </div>
        </div>
    </React.Fragment>

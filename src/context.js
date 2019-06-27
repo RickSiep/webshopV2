@@ -131,7 +131,7 @@ class ProductProvider extends Component {
             this.setProducts();
             this.addTotals();
         });
-    }
+    };
     addTotals = () =>{
         let subTotal = 0;
         this.state.cart.map(item => (subTotal += item.total));
@@ -145,7 +145,8 @@ class ProductProvider extends Component {
                 cartTotal: total
             };
         });
-    }
+    };
+
     render() {
         return (
             <ProductContext.Provider value={{
