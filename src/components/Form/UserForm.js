@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import FormUserDetails from './FormUserDetails';
 import FormPersonalDetails from './FormPersonalDetails';
 import Confirm from './Confirm';
-import Succes from './Succes';
+import Succes from '../Cart/Succes';
+import {ProductConsumer} from "../../context";
 
 
 class UserForm extends Component {
@@ -13,7 +14,7 @@ class UserForm extends Component {
         email: '',
         occupation: '',
         city: '',
-        bio: ''
+        bio: '',
     }
 
     // Proceed to next step
@@ -69,7 +70,16 @@ class UserForm extends Component {
                     />
                 );
             case 4:
-                return <Succes/>;
+                return(
+                    <ProductConsumer>
+                        {value => {
+                            const {cart} = value;
+                            return (
+                                <Succes value={value}/>
+                            )
+                        }}
+                    </ProductConsumer>
+                ) ;
 
         }
     }

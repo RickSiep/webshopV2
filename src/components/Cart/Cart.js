@@ -5,7 +5,7 @@ import EmptyCart from './EmptyCart';
 import {ProductConsumer} from "../../context";
 import CartList from './CartList';
 import CartTotals from './CartTotals';
-import Personal from '../Form/FormUserDetails'
+import Succes from './Succes';
 
 class Cart extends Component {
     render() {
@@ -21,6 +21,7 @@ class Cart extends Component {
                                     <CartColumns/>
                                     <CartList value={value}/>
                                     <CartTotals value={value}/>
+                                    <Succes value={value}/>
                                 </React.Fragment>
                             )
                         }

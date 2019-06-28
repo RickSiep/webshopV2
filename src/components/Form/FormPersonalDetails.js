@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import {ButtonContainer} from "../Button";
+import Title from "../Title";
 
 
 
@@ -24,6 +25,7 @@ class FormPersonalDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
+                    <Title name="Uw" title="gegevens"/>
                     <div className="d-flex align-items-center flex-column">
                     <TextField
                         hintText="Uw baan"
@@ -47,18 +49,14 @@ class FormPersonalDetails extends Component {
                     />
                     </div>
                     <div className="d-flex justify-content-center">
-                    <RaisedButton
-                        label="Volgende"
-                        primary={true}
-                        style={styles.button}
-                        onClick={this.continue}
-                    />
-                    <RaisedButton
-                        label="Terug"
-                        primary={false}
-                        style={styles.button}
-                        onClick={this.back}
-                    />
+                        <ButtonContainer onClick={this.continue}>
+                            Volgende
+                        </ButtonContainer>
+
+                        <ButtonContainer onClick={this.back}>
+                            Vorige
+                        </ButtonContainer>
+
                     </div>
                 </React.Fragment>
             </MuiThemeProvider>

@@ -17,9 +17,10 @@ body{
   /* Overwrite bootstrap */
   font-family: 'Montserrat', sans-serif!important;
   background: var(--mainWhite) !important;
-  color: var(--mainDark) !important;
+  color: var(--mainDark);
   position: relative;
   margin: 0;
+  overflow-x: hidden;
 }
 .text-title{
   font-family: 'Open Sans', sans-serif;
@@ -74,7 +75,6 @@ body{
           rgba(20,20,20, .8),
           rgba(20,20,20, .8)),
   url('penguinsBG.png') center no-repeat;
-
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
@@ -82,12 +82,16 @@ body{
 
 /* Shirt section */
 .shirts-container{
-  background: url("peng.jpg") center no-repeat;
+  background: linear-gradient(
+          rgba(20,20,20, .4),
+          rgba(20,20,20, .4)),
+  url("peng.jpg") center no-repeat;
   background-size: cover;
 }
 .shirts-content{
   max-width: 400px;
   padding: 10% 0 2% 5%;
+  color: var(--mainWhite);
 }
 
 /* How does it work section */
@@ -105,13 +109,18 @@ body{
   padding: 0px 20px;
 }
 
+.background-black{
+  background-color: var(--mainBlue);
+  padding: 20px;
+}
 
 .page-footer{
-  background-color: var(--mainBlue);
+  background-color: var(--mainDark);
+  color: var(--mainWhite);
 }
 footer a {
   color: var(--mainOrange);
 }
 .footer-copyright{
-  background-color: var(--lightBlue);
+  background-color: var(--mainOrange);
 }

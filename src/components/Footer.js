@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {ButtonContainer} from "./Button";
 import {Input} from "./Input";
 import Maps from '../maps.png';
+import {Link} from 'react-router-dom';
 
 class Footer extends Component {
     render() {
@@ -11,7 +12,7 @@ class Footer extends Component {
 
              <div className="container-fluid text-center text-md-left my-5">
                  <div className="row">
-                     <div className="col-md-3 mt-md-0 mt-4">
+                     <div className="col mt-md-0 mt-4">
                          <h5 className="text-uppercase">Nieuwsbrief</h5>
                          <p>Meld u aan net zoals 0 anderen aan vor de nieuwsbrief om op
                          de hoogte te blijven van PengWin</p>
@@ -21,60 +22,50 @@ class Footer extends Component {
                          </div>
                      </div>
                      <hr className="clearfix w-100 d-md-none pb-3"/>
-                     <div className="col-md-3 mb-md-0 mb-4">
+                     <div className="col mb-md-0 mb-4">
                          <h5 className="text-uppercase">Links</h5>
                          <ul className="list-unstyled">
                              <li>
-                                 <a href="#">
-                                     test
-                                 </a>
+                                 <Link to="/">
+                                     Home
+                                 </Link>
                              </li>
                              <li>
-                                 <a href="#">
-                                     test
-                                 </a>
+                                 <Link to="/products">
+                                     Bestellen
+                                 </Link>
                              </li>
                              <li>
-                                 <a href="#">
-                                     test
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#">
-                                     test
-                                 </a>
+                                 <Link to="/works">
+                                     Hoe werkt het
+                                 </Link>
                              </li>
                          </ul>
                      </div>
                      <hr className="clearfix w-100 d-md-none pb-3"/>
-                     <div className="col-md-3 mb-md-0 mb-3">
-                         <h5 className="text-uppercase">Links</h5>
+                     <div className="col mb-md-0 mb-3">
+                         <h5 className="text-uppercase">Help</h5>
                          <ul className="list-unstyled">
                              <li>
-                                 <a href="#">
-                                     test
-                                 </a>
+                                 <Link to="/">
+                                     Contact
+                                 </Link>
                              </li>
                              <li>
-                                 <a href="#">
-                                     test
-                                 </a>
+                                 <Link to="/">
+                                     Bestelstatus
+                                 </Link>
                              </li>
                              <li>
-                                 <a href="#">
-                                     test
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#">
-                                     test
-                                 </a>
+                                 <Link to="/">
+                                     Verzending
+                                 </Link>
                              </li>
                          </ul>
                      </div>
 
                      <hr className="clearfix w-100 d-md-none pb-3"/>
-                     <div className="col-md-3  mb-md-0 mb-3">
+                     <div className="col  mb-md-0 mb-3">
                          <h5 className="text-uppercase">Over ons</h5>
                          <div className="d-flex flex-row">
                              <img src={Maps} alt="Maps from Page Rick Siepelinga Pengwin"

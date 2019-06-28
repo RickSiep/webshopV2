@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {List, ListItem} from 'material-ui/List';
-import RaisedButton from 'material-ui/RaisedButton';
+import {ButtonContainer} from "../Button";
 
 class FormUserDetails extends Component {
     continue = e => {
@@ -50,18 +50,13 @@ class FormUserDetails extends Component {
                     </List>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <RaisedButton
-                            label="Confirm & Continue"
-                            primary={true}
-                            style={styles.button}
-                            onClick={this.continue}
-                        />
-                        <RaisedButton
-                            label="Terug"
-                            primary={false}
-                            style={styles.button}
-                            onClick={this.back}
-                        />
+                        <ButtonContainer onClick={this.continue}>
+                            Volgende
+                        </ButtonContainer>
+
+                        <ButtonContainer onClick={this.back}>
+                            Vorige
+                        </ButtonContainer>
                     </div>
                 </React.Fragment>
             </MuiThemeProvider>
